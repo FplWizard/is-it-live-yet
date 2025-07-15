@@ -5,7 +5,7 @@ const interval = {
   lastCheck: null,
 };
 
-const timespan = 1000 * 10; // 10 seconds
+const timespan = 1000 * 1; // 1 seconds
 interval.value = setInterval(check, timespan);
 check();
 
