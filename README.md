@@ -6,10 +6,14 @@ When registration opens up, it opens EDM banger and the FPL site in your browser
 ---
 
 ## BEFORE YOU READ
-Download FPL Wizard from Google Play or App Store
+Download FPL Wizard from Google Play or App Store, it's the best FPL app out there. You'll thank me later!
 
 🤖 https://play.google.com/store/apps/details?id=com.fplwizard.mobile 
+
 🍏 https://apps.apple.com/us/app/fpl-wizard/id6472951034
+
+## 🛠 How to Run (For people who know how node works)
+Download, npm install and node start...
 
 ## 🛠 How to Run (For Total Beginners)
 
