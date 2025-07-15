@@ -1,7 +1,7 @@
 # IS_IT_LIVE_YET
 
 This is a simple script that checks the status of the Fantasy Premier League (FPL).  
-When registration opens up, it opens EDM banger and the FPL site in your browser to get you started.
+When registration opens up, it opens FPL site in your browser to get you started.
 
 ---
 
