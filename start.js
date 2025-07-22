@@ -20,8 +20,7 @@ async function check() {
                             .catch(err => ({ success: false, err: err.message, status: err.response?.status || 500 }));
     const current = fplBootstrap?.data?.events?.find(e => e.is_current);
     if(fplBootstrap?.success){
-      if (fplBootstrap?.data?.events?.length && !current?.id) throw new Error('NEW SEASON!!! //bootstrap');
-      throw new Error('NEW SEASON!!! //bootstrap else');
+      if (fplBootstrap?.data?.events?.length && current?.id !== 38) throw new Error('NEW SEASON!!! //bootstrap');
     }
 
     const tsNew = new Date() * 1;
