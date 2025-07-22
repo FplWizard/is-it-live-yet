@@ -12,13 +12,14 @@ check();
 async function check() {
   // Format HH:MM:SS
   const ts = new Date() * 1;
+  let current;
   
   // Check FPL status
   try {
     const fplBootstrap = await axios.get('https://fantasy.premierleague.com/api/bootstrap-static/')
                             .then(res => ({success:true, data:res.data}))
                             .catch(err => ({ success: false, err: err.message, status: err.response?.status || 500 }));
-    const current = fplBootstrap?.data?.events?.find(e => e.is_current);
+    current = fplBootstrap?.data?.events?.find(e => e.is_current);
     if(fplBootstrap?.success){
       if (fplBootstrap?.data?.events?.length && current?.id !== 38) throw new Error('NEW SEASON!!! //bootstrap');
     }
